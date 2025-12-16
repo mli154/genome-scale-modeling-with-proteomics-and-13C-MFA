@@ -1,5 +1,5 @@
 # Genome scale metabolic modeling with proteomics and 13C-MFA
-This repository contains information and a MATLAB script for genome scale metabolic modeling using empirical data from bulk proteomics and 13C-metabolic flux analysis (13C-MFA).
+This repository contains information and MATLAB scripts for genome scale metabolic modeling using empirical data from bulk proteomics and 13C-metabolic flux analysis (13C-MFA).
 
 Here, we implement protein expression data from bulk proteomics and empirical flux data from 13C-metabolic flux analysis to infer fluxes of various pathways in cancer cells at the genome scale. We reduced the Homo sapien Recon3D metabolic network model [1] to only contain reactions reflected in our 13C-MFA and bulk proteomics datasets. Our approach is based off of the E-Flux method [2], where protein expression is used to set upper and lower bounds of reaction fluxes of the reduced Recon3D model, with the assumption that higher expression leads to higher flux. Flux data from 13C-MFA was used to set constraints for corresponding reactions in the reduced model and Coordinate-Hit-and-Run with Rounding (CHRR) flux sampling [3] was performed to sample flux distributions from the constrined metabolic model.
 

@@ -4,6 +4,8 @@ savepath
 initCobraToolbox(false)
 changeCobraSolver('gurobi','all')
 
+% You must first download the Recon3D.mat file from BiGG Model database
+
 % Load full model (after initializing your COBRA session and solver)
 model = readCbModel('Recon3D.mat');
 
@@ -85,4 +87,5 @@ FBAsolution = optimizeCbModel(modelReduced);
 disp(FBAsolution.f);
 
 % Save reduced model
+
 save('Recon3D_reduced.mat', 'modelReduced');

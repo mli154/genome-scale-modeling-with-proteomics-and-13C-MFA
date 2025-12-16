@@ -14,16 +14,19 @@ The following optimization solver and MATLAB toolboxes are required to run this 
 ## Usage
 
 ### Filtering proteomic data to include only metabolism-related proteins based on Recon3D model 
-To use script for filtering the bulk proteomics dataset to include only metabolism-related proteins, a log2-transformed protein expression .csv file containing ENTREZ IDs for each protein is needed. Example column name and data are shown below:
+To use the script for filtering the bulk proteomics dataset to include only metabolism-related proteins, a log2-transformed protein expression .csv file containing ENTREZ IDs for each protein is needed. Example column name and data are shown below:
 
-| Protein.ID | log2_Group1 | log2_Group 2 |
-| -----------|-------------|--------------|
-| FBP1       | 20.2087649  | 21.3422368   |
-| SOD2       | 23.8277987  | 26.2988924   |
+| Protein.ID | log2_Group1 | log2_Group 2 | ENTREZID |
+| -----------|-------------|--------------|----------|
+| FBP1       | 20.2087649  | 21.3422368   |2203      |
+| SOD2       | 23.8277987  | 26.2988924   |6648      |
 
 In addition, the Recon3D.mat file should be downloaded from the BiGG Model Database [4]. This can be found at: http://bigg.ucsd.edu/models/Recon3D.
 
-Open the metabolic_protein_filtering_proteomics.m file in MATLAB. 
+Run the code in the metabolic_protein_filtering_proteomics.m file in MATLAB and export the filtered proteomics data as a .csv file.
+
+### Reducing the Recon3D model to only include reactions that correspond to proteomic and 13C-MFA datasets, nutrient exchange, and nutrient transport.
+To use the script for reduce the Recon3D model to only include reactions that correspond to proteomic and 13C-MFA datasets, 
 
 
 

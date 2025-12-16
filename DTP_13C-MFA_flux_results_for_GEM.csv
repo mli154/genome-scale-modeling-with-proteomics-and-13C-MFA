@@ -1,0 +1,45 @@
+﻿reaction_id,reaction,flux,std
+EX_glc__D_e,Gluc.ext -> Gluc.c,-1.40E+03,408.3732734
+HEX1,Gluc.c + ATP -> G6P + ADP + Pi,1.40E+03,408.3732734
+PGI,G6P <-> F6P,-7.33E+03,45.722
+PFK,F6P -> FBP,-1.51E+03,15.2407
+FBP,FBP -> F6P,1.51E+03,15.2407
+FBA,FBP <-> DHAP + GAP,-1.51E+03,15.2407
+TPI,DHAP <-> GAP,-1.51E+03,15.2407
+PGK, 3PG + ATP <-> 13BPG + ADP + Pi,102.9258,15.2407
+PGM,2PG <-> 3PG,102.9258,15.2407
+ENO,2PG <-> PEP + H2O,-102.9258,15.2407
+PYK,PEP + ADP <-> Pyr.c + ATP,-102.9258,15.2407
+G6PDH2r,G6P -> 6PGL,8.74E+03,45.722
+PGL,6PGL -> 6PG,8.74E+03,45.722
+GND,6PG -> Ru5P + CO2,8.74E+03,45.722
+TKT1,P5P + P5P <-> S7P + GAP,2.91E+03,15.2407
+TKT2,P5P + E4P <-> F6P + GAP,2.91E+03,15.2407
+TALA,S7P + GAP <-> F6P + E4P,2.91E+03,15.2407
+LDH_L, Lact <-> Pyr.c,-100,21.49499951
+PYRt2m,Pyr.c -> Pyr.m,71.9882,22.0825
+PDHm,Pyr.m + NAD -> AcCoA.m + CO2 + NADH,66.1688,42.4804
+CSm,AcCoA.m + OAC.m -> Cit.m,67.3493,13.9049
+ICDHxm,Cit.m + NAD <-> AKG.m + CO2 + NADH,61.9134,28.3363
+AKGDm,AKG.m + NAD -> Suc.m + CO2 + NADH,302.9743,28.3363
+SUCD1m,Suc.m + FAD <-> Fum.m + FADH2,360,28.53311005
+FUMm,Fum.m <-> Mal.m,360,28.53311005
+MDHm,Mal.m + NAD <-> OAC.m + NADH,31.8693,13.9049
+ME1m,Mal.m -> Pyr.m + CO2,29.6606,58.8055
+ME2,Mal.c -> Pyr.c + CO2,303.906,34.5999
+PCm,Pyr.m + CO2 + ATP -> OAC.m + ADP + Pi,35.48,0
+MALtm,Mal.c <-> Mal.m,-298.4701,57.3848
+MDH,Mal.c <-> OAC.c,-5.4359,32.611
+FUM,Mal.c <-> Fum.c,1.39E-12,0
+CITtam, Cit.c -> Cit.m ,-5.4359,32.611
+ACITL,Cit.c -> AcCoA.c + OAC.c,5.4359,32.611
+ACCOAC,AcCoA.c -> FA,5.4359,32.611
+GLUNm,Gln.c <-> Glu.c,257,72.9013368
+ASPGLUm,Glu.c <-> Glu.m,241,34.958
+GLUDym,Glu.m <->  AKG.m ,241,34.958
+EX_gln__L_e,Gln.ext -> Gln.c,-257,72.9013368
+EX_glu__L_e,Glu.c -> Glu.ext,16,2.112049163
+EX_pyr_e,Pyr.c -> Pyr.ext ,28.23,14.34
+EX_lac__L_e,Lact ->  Lact.ext ,100,21.49499951
+CO2t,CO2.ext -> CO2,-9.47E+03,30.4813
+CYOOm3i,NADH + FADH2 + O2 + 4*ADP + 4*Pi -> NAD + FAD + 2*H2O + 4*ATP,360,28.53311005

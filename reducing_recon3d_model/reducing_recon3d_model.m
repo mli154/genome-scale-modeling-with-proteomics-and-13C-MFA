@@ -10,7 +10,7 @@ changeCobraSolver('gurobi','all')
 model = readCbModel('Recon3D.mat');
 
 % Load proteomics data
-protT = readtable('metabolic_only_proteomics_normalized_abundances.csv');
+protT = readtable('metabolic_only_proteomics.csv');
 expressedEntrezIDs = string(protT.ENTREZID);
 
 % List MFA/13C flux reaction IDs (from your flux file)
@@ -89,3 +89,4 @@ disp(FBAsolution.f);
 % Save reduced model
 
 save('Recon3D_reduced.mat', 'modelReduced');
+
